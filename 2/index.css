@@ -1,11 +1,8 @@
-.heading1 {
+#heading1 {
     background-color: cadetblue;
 }
 
-.heading2 {
+#heading2 {
     background-color: coral;
 }
 
-.container {
-    background-color: aqua;
-}
