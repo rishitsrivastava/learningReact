@@ -2954,9 +2954,17 @@ var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 // what does jsx do? 
 // JSX -> createElement -> object -> HTML(DOM)
-const heading1 = /*#__PURE__*/ (0, _react.createElement)("h1", {
-    id: "heading1"
-}, "from heading1");
+const Title = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        className: "title",
+        children: "Made by Rishit"
+    }, void 0, false, {
+        fileName: "index.js",
+        lineNumber: 8,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Title;
 // const heading2 = createElement("h2",{id:"heading2"}, "from heading2");
 const heading2 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     id: "heading2",
@@ -2967,16 +2975,17 @@ const heading2 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     columnNumber: 18
 }, undefined);
 // both heading1 and heading2 are same, heading2 gets created into heading1 behind the scenes by babel
-const container = /*#__PURE__*/ (0, _react.createElement)("div", {
-    id: "container"
-}, [
-    heading1,
-    heading2
-]);
+// const container = createElement("div", {id:"container"},[heading1, heading2])
 const HeadingComponent = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 17,
+                columnNumber: 9
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "heading1",
                 children: "hey bro from first functional component"
             }, void 0, false, {
                 fileName: "index.js",
@@ -2984,6 +2993,7 @@ const HeadingComponent = ()=>{
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: "heading2",
                 children: "writing two tags in the return statement from functional component"
             }, void 0, false, {
                 fileName: "index.js",
@@ -2993,15 +3003,16 @@ const HeadingComponent = ()=>{
         ]
     }, void 0, true);
 };
-_c = HeadingComponent;
+_c1 = HeadingComponent;
 const root = (0, _client.createRoot)(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
     fileName: "index.js",
     lineNumber: 23,
     columnNumber: 13
 }, undefined));
-var _c;
-$RefreshReg$(_c, "HeadingComponent");
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "HeadingComponent");
 
   $parcel$ReactRefreshHelpers$e4e3.postlude(module);
 } finally {

@@ -1,9 +1,30 @@
+#root {
+  flex: content;
+  background-color: #ffebcd;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 15px;
+}
+
 #heading1 {
   background-color: #5f9ea0;
 }
 
 #heading2 {
   background-color: coral;
+}
+
+.heading1 {
+  background-color: #5f9ea0;
+}
+
+.heading2 {
+  background-color: coral;
+}
+
+.title {
+  background-color: #dc143c;
 }
 
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
