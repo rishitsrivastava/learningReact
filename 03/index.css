@@ -1,0 +1,34 @@
+#root {
+    background-color: blanchedalmond;
+    padding: 15px;
+    margin: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#heading1 {
+    background-color: cadetblue;
+}
+
+#heading2 {
+    background-color: coral;
+}
+
+.heading1 {
+    background-color: cadetblue;
+}
+
+.heading2 {
+    background-color: coral;
+}
+
+.title {
+    background-color: crimson;
+}
+
+
