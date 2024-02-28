@@ -15,9 +15,11 @@ const heading2 = <h1 id="heading2">from heading2</h1>
 
 const HeadingComponent = () => {
     return <>
-        <Title />
-        <h1 className="heading1">hey bro from first functional component</h1>
-        <h2 className="heading2">writing two tags in the return statement from functional component</h2>
+        <div className="container">
+            <Title />
+            <h1 className="heading1">hey bro from first functional component</h1>
+            <h2 className="heading2">writing two tags in the return statement from functional component</h2>
+        </div>
     </>
 }
 

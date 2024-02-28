@@ -2978,36 +2978,43 @@ const heading2 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
 // const container = createElement("div", {id:"container"},[heading1, heading2])
 const HeadingComponent = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
-                fileName: "index.js",
-                lineNumber: 17,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "heading1",
-                children: "hey bro from first functional component"
-            }, void 0, false, {
-                fileName: "index.js",
-                lineNumber: 18,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                className: "heading2",
-                children: "writing two tags in the return statement from functional component"
-            }, void 0, false, {
-                fileName: "index.js",
-                lineNumber: 19,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true);
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "container",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+                    fileName: "index.js",
+                    lineNumber: 18,
+                    columnNumber: 13
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: "heading1",
+                    children: "hey bro from first functional component"
+                }, void 0, false, {
+                    fileName: "index.js",
+                    lineNumber: 19,
+                    columnNumber: 13
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "heading2",
+                    children: "writing two tags in the return statement from functional component"
+                }, void 0, false, {
+                    fileName: "index.js",
+                    lineNumber: 20,
+                    columnNumber: 13
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "index.js",
+            lineNumber: 17,
+            columnNumber: 9
+        }, undefined)
+    }, void 0, false);
 };
 _c1 = HeadingComponent;
 const root = (0, _client.createRoot)(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
     fileName: "index.js",
-    lineNumber: 23,
+    lineNumber: 25,
     columnNumber: 13
 }, undefined));
 var _c, _c1;

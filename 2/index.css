@@ -2,8 +2,12 @@
     background-color: blanchedalmond;
     padding: 15px;
     margin: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    flex: content;
     justify-content: center;
 }
 
