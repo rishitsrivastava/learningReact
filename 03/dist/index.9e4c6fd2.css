@@ -11,6 +11,14 @@
   display: flex;
 }
 
+.body {
+  border: 2px solid #000;
+  border-radius: 2px;
+  margin: 25px;
+  display: flex;
+  overflow: auto;
+}
+
 .list {
   list-style-type: none;
   display: flex;
@@ -19,5 +27,16 @@
 .nav-items > ul > li {
   cursor: pointer;
   padding: 10px;
+}
+
+.card {
+  border: 1px solid #000;
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.card > img {
+  width: 150px;
 }
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

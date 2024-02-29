@@ -47,6 +47,15 @@
     border-radius: 2px;
 }
 
+.body {
+    /* width: 100px; */
+    border: 2px solid black;
+    border-radius: 2px;
+    margin: 25px;
+    display: flex;
+    overflow: auto;
+}
+
 .list {
     display: flex;
     list-style-type: none;
@@ -55,4 +64,15 @@
 .nav-items > ul > li {
     padding: 10px;
     cursor: pointer;
+}
+
+.card {
+    margin: 10px;
+    border: 1px solid black ;
+    width: 150px;
+    padding: 10px;
+}
+
+.card > img {
+    width: 150px;
 }
