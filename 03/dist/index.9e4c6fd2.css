@@ -12,8 +12,12 @@
 }
 
 .list {
-  padding: 50px;
   list-style-type: none;
   display: flex;
+}
+
+.nav-items > ul > li {
+  cursor: pointer;
+  padding: 10px;
 }
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
