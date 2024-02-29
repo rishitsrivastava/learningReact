@@ -1,0 +1,19 @@
+.logo {
+  width: 120px;
+  height: 40px;
+}
+
+.header {
+  border: solid;
+  border-radius: 2px;
+  justify-content: space-between;
+  margin: 20px;
+  display: flex;
+}
+
+.list {
+  padding: 50px;
+  list-style-type: none;
+  display: flex;
+}
+/*# sourceMappingURL=index.9e4c6fd2.css.map */

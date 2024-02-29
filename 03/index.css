@@ -1,4 +1,4 @@
-#root {
+/* #root {
     background-color: blanchedalmond;
     padding: 15px;
     margin: 15px;
@@ -31,4 +31,23 @@
     background-color: crimson;
 }
 
+ */
 
+
+.logo {
+    width: 120px;
+    height: 40px;
+}
+
+.header {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: solid;
+    border-radius: 2px;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+}
