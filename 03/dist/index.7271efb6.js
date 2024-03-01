@@ -27503,21 +27503,21 @@ const RestaurantCard = ()=>{
                 lineNumber: 6,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Chinese Wok"
             }, void 0, false, {
                 fileName: "src/components/Body.js",
                 lineNumber: 7,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "Chinese Asian"
             }, void 0, false, {
                 fileName: "src/components/Body.js",
                 lineNumber: 8,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "4.2 stars"
             }, void 0, false, {
                 fileName: "src/components/Body.js",

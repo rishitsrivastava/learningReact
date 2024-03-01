@@ -69,10 +69,15 @@
 .card {
     margin: 10px;
     border: 1px solid black ;
-    width: 150px;
+    width: 200px;
     padding: 10px;
+    height: 270px;
+}
+
+.card > p {
+    margin: 15px;
 }
 
 .card > img {
-    width: 150px;
+    width: 100%;
 }
