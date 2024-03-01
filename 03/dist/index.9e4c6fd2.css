@@ -46,4 +46,20 @@
 .card > img {
   width: 100%;
 }
+
+.search {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.search-input {
+  width: 400px;
+  height: 30px;
+}
+
+.search-button {
+  height: 30px;
+  margin-left: 10px;
+}
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
