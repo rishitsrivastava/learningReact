@@ -1,48 +1,39 @@
-import { ImageLink } from "../Constants"
+import { useState } from "react"
 import { RestaurantData } from "../Constants"
-import { Search } from "./Search"
+import RestaurantCard from "./RestaurantCard"
 
 
-const RestaurantCard = ({
-    cloudinaryImageId,
-    name,
-    cuisines,
-    avgRating
-}) => {
-    
-    return (
-        <div>
-            <div className="card">
-                <img className="foodImage" src={ImageLink + cloudinaryImageId} alt="food" />
-                <p>{name}</p>
-                <p>{cuisines.join(", ")}</p>
-                <p>{avgRating}</p>
-            </div> 
-        </div> 
-    )
+// console.log(dataFromSearch)
+
+function filterData(searchText, restaurants) {
+    const filteredData = restaurants.filter((restaurant) => {
+        restaurant.info.name.includes(searchText);
+    })
+    return filteredData;
 }
 
-
 export const Body = () => {
+    const [searchText, setSearchText] = useState("")
+    const [restaurants, setRestaurants] = useState(RestaurantData);
+
     return (
         <div>
-            <Search />
+            <div className="search">
+                <input 
+                    type="text"
+                    placeholder="search"
+                    className="search-input"
+                    value={searchText}
+                    onChange={(e) => {setSearchText(e.target.value)}}
+                />
+                <button className="search-button" onClick={() => {
+                    const data = filterData(searchText, restaurants);
+                    setRestaurants(data);
+                }} >Search</button>
+            </div>
             <div className="body">
-                {/* <RestaurantCard restaurant={RestaurantData[0]} />
-                <RestaurantCard restaurant={RestaurantData[1]} />
-                <RestaurantCard restaurant={RestaurantData[2]} />
-                <RestaurantCard restaurant={RestaurantData[3]} />
-                <RestaurantCard restaurant={RestaurantData[4]} />
-                <RestaurantCard restaurant={RestaurantData[5]} />
-                <RestaurantCard restaurant={RestaurantData[6]} />
-                <RestaurantCard restaurant={RestaurantData[7]} />
-                <RestaurantCard restaurant={RestaurantData[8]} />
-                <RestaurantCard restaurant={RestaurantData[9]} />
-                <RestaurantCard restaurant={RestaurantData[10]} />
-                <RestaurantCard restaurant={RestaurantData[11]} />
-                <RestaurantCard restaurant={RestaurantData[12]} /> */}
-                {RestaurantData.map((restaurant) => {
-                    return <RestaurantCard {...restaurant.info} />
+                {restaurants.map((restaurant, index) => {
+                    return <RestaurantCard key={index} {...restaurant.info} />
                 })}
             </div>
         </div>
