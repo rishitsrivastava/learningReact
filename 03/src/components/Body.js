@@ -3,11 +3,9 @@ import { RestaurantData } from "../Constants"
 import RestaurantCard from "./RestaurantCard"
 
 
-// console.log(dataFromSearch)
-
 function filterData(searchText, restaurants) {
     const filteredData = restaurants.filter((restaurant) => {
-        restaurant.info.name.includes(searchText);
+        return restaurant.info.name.includes(searchText);
     })
     return filteredData;
 }
