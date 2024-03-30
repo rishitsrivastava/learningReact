@@ -34,7 +34,7 @@ export default function Target() {
             <div className='flex flex-col'>
                 <form>
                     <LabelHeading label="Target User if..." />
-                    <div className='grid-cols-3 mt-2 flex justify-between font-normal border border-2 p-1 border-gray-300'>
+                    <div className='grid-cols-3 mt-2 flex justify-between font-normal border-2 p-1 border-gray-300'>
                         <div>
                             App
                         </div>
