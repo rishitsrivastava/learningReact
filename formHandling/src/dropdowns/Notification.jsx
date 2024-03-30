@@ -6,36 +6,24 @@ import Input from '../components/Input'
 import Button from '../components/Button'
 
 export default function Notification() {
-    const [formData, setFormData] = useState({
-        title: '',
-        text: '',
-        imageUrl: '',
-        name: '',
-      });
-    
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData((prevData) => ({
-          ...prevData,
-          [name]: value,
-        }));
-    };
+    const [dropdownVisible, setDropdownVisible] = useState(false);
 
-    const handleForm = (e) => {
-        e.preventDefault();
-        alert("form submitted")
-        console.log(formData)
-    }
+    const toggleDropdown = () => {
+      setDropdownVisible((prevState) => !prevState);
+    };
+  
+    
   return (
     <div className='flex flex-col ml-5 mr-11'>
-        <div className='flex mb-5'>
+        <div className='flex mb-5' onClick={toggleDropdown}>
             <PointNumber number="1" />
             <PointHeading className="" name="Notification" />
         </div>
 
+        {dropdownVisible && (
         <div className='ml-11'>
             <div className='flex flex-col'>
-                <form onSubmit={handleForm}>
+                <form>
                     <LabelHeading label="Notification title" />
                     <Input placeholder="title" />
                     <LabelHeading label="Notification text" />
@@ -48,6 +36,7 @@ export default function Notification() {
                 </form>
             </div>
         </div>
+        )}
     </div>
   )
 }
