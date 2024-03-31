@@ -22,12 +22,12 @@ export default function Target() {
         {dropdownVisible && (
         <div>
             <div className='ml-11 flex'>
-            <div className='mr-6 bg-blue-300 cursor-pointer text-blue-800 font-semibold p-1'>
+            <button className='mr-6 bg-blue-300 cursor-pointer text-blue-800 font-semibold p-1'>
                 User segment
-            </div>
-            <div className='p-1 font-semibold cursor-pointer'>
+            </button>
+            <button className='p-1 font-semibold cursor-pointer'>
                 Topic
-            </div>
+            </button>
         </div>
 
         <div className='ml-11 mt-3'>
